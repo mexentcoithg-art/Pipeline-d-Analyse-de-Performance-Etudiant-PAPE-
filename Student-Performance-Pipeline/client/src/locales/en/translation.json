@@ -1,0 +1,178 @@
+{
+    "app": {
+        "title": "Student Analytics",
+        "apiOnline": "API: Online",
+        "apiOffline": "API: Offline",
+        "tabs": {
+            "dashboard": "Dashboard",
+            "predictions": "AI Predictions",
+            "eda": "Insights & EDA",
+            "about": "About"
+        }
+    },
+    "dashboard": {
+        "header": {
+            "title": "Executive Dashboard",
+            "subtitle": "Real-time overview of student academic metrics",
+            "searchPlaceholder": "Search by Massar ID or Class..."
+        },
+        "kpi": {
+            "averageGrade": "Average Grade",
+            "passRate": "Pass Rate",
+            "avgAbsences": "Avg Absences",
+            "atRisk": "Students At Risk"
+        },
+        "charts": {
+            "gradeDistTitle": "Final Grade Distribution (Sample)",
+            "featureImportanceTitle": "AI Feature Importance",
+            "top20": "Top 20 Checked",
+            "finalGradeLine": "Final Grade (G3)",
+            "riskDistTitle": "Risk Distribution",
+            "riskDistTotal": "Total Students",
+            "passing": "Passing",
+            "atRisk": "At Risk",
+            "classComparisonTitle": "Class Performance Comparison",
+            "temporalTitle": "Performance Evolution (Trends)"
+        },
+        "table": {
+            "title": "Detailed Student Records",
+            "results": "{{count}} Results",
+            "cols": {
+                "massar": "Massar Code",
+                "class": "Class",
+                "gender": "Gender",
+                "absences": "Absences",
+                "participation": "Participation",
+                "g3": "Final Score (G3)",
+                "status": "Status"
+            },
+            "status": {
+                "average": "Average",
+                "atRisk": "At Risk",
+                "excellent": "Excellent"
+            },
+            "loading": "Loading data...",
+            "empty": "No students found matching your search.",
+            "export": "Export CSV",
+            "pagination": {
+                "prev": "Previous",
+                "next": "Next",
+                "page": "Page {{current}} of {{total}}"
+            }
+        }
+    },
+    "predictions": {
+        "header": {
+            "title": "AI Failure Predictions",
+            "subtitle": "Our Machine Learning model analyzes academic history, attendance, and demographics to predict which students are at risk of failing (G3 < 10), allowing for early intervention."
+        },
+        "actions": {
+            "refresh": "Refresh Data",
+            "train": "Train AI & Predict",
+            "training": "Training Model..."
+        },
+        "banner": {
+            "success": "Model Updated Successfully",
+            "details": "Classif. Accuracy: {{rf}}% • AUC Score: {{auc}}% • Analyzed {{records}} students on {{features}} features."
+        },
+        "table": {
+            "title": "Latest Predictions",
+            "cols": {
+                "date": "Date",
+                "massar": "Massar Code",
+                "gender": "Gender",
+                "predicted": "Success Probability",
+                "riskLevel": "Risk Level",
+                "topFactor": "Primary Factor",
+                "recommendation": "Recommendation"
+            },
+            "loading": "Loading AI analysis...",
+            "empty": "No predictions generated yet. Click 'Train AI' to begin."
+        }
+    },
+    "eda": {
+        "header": {
+            "title": "Exploratory Data Analysis (EDA)",
+            "subtitle": "A correlation heatmap showcasing the statistical relationships between varying features and the final predictive outcome (G3)."
+        },
+        "actions": {
+            "regenerate": "Regenerate Chart"
+        },
+        "chart": {
+            "loading": "Generating Heatmap...",
+            "error": "Failed to load heatmap from Python backend."
+        }
+    },
+    "modal": {
+        "title": "Student Details",
+        "loading": "Loading pupil record...",
+        "error": "Could not fetch student data.",
+        "profile": {
+            "id": "ID: {{id}}",
+            "class": "Class: {{class}}",
+            "level": "Level: {{level}}"
+        },
+        "social": {
+            "title": "Social Background",
+            "guardian": "Guardian",
+            "guardianUnknown": "Unknown",
+            "schoolingYears": "Schooling Years",
+            "years": "{{count}} years",
+            "guardianJob": "Guardian Job",
+            "jobUnknown": "N/A"
+        },
+        "academic": {
+            "title": "Academic Performance",
+            "finalAvg": "Final Avg",
+            "absences": "Absences",
+            "participation": "Participation Rating"
+        }
+    },
+    "upload": {
+        "button": "Upload Data",
+        "title": "Import Data File",
+        "subtitle": "Upload an Excel (.xlsx) or CSV file containing student data in Massar format.",
+        "dropzone": "Drag & drop your file here, or click to browse",
+        "formats": "Accepted formats: .xlsx, .xls, .csv",
+        "uploading": "Uploading...",
+        "success": "{{count}} students imported successfully!",
+        "error": "Error during import",
+        "cancel": "Cancel",
+        "submit": "Start Import",
+        "close": "Close"
+    },
+    "login": {
+        "title": "Student Analytics",
+        "subtitle": "Secure Access",
+        "username": "Username",
+        "password": "Password",
+        "button": "Sign In",
+        "error_invalid": "Invalid credentials (admin/admin)",
+        "security_tip": "This system is restricted to authorized administrative personnel."
+    },
+    "about": {
+        "hero": {
+            "subtitle": "Capstone Project",
+            "description": "An intelligent analytical platform designed to help educators identify at-risk students using Machine Learning."
+        },
+        "mission": {
+            "title": "Our Mission",
+            "p1": "This project aims to transform Massar school data into powerful decision-making tools.",
+            "p2": "By using Random Forest algorithms, we predict final performance to enable preventive intervention."
+        },
+        "tech": {
+            "title": "Tech Stack",
+            "repo": "View on GitHub"
+        },
+        "features": {
+            "realtime": "Real-time",
+            "realtimeDesc": "Data instantly synchronized with PostgreSQL.",
+            "ai": "Predictive AI",
+            "aiDesc": "Random Forest models trained on the Massar dataset.",
+            "i18n": "Multilingual",
+            "i18nDesc": "Full support for French and English.",
+            "responsive": "Ultra-Responsive",
+            "responsiveDesc": "Design optimized for tablets and desktops."
+        }
+    }
+}

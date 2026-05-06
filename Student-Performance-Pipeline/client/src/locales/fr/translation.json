@@ -1,0 +1,209 @@
+{
+    "app": {
+        "title": "Analyses étudiantes",
+        "apiOnline": "API : En ligne",
+        "apiOffline": "API : Hors ligne",
+        "tabs": {
+            "dashboard": "Aperçu",
+            "predictions": "Prédictions de l'IA",
+            "eda": "Analyses et EDA",
+            "about": "À Propos"
+        }
+    },
+    "dashboard": {
+        "header": {
+            "title": "Tableau de bord exécutif",
+            "subtitle": "Aperçu en temps réel des indicateurs académiques des étudiants",
+            "searchPlaceholder": "Recherche par identifiant Massar ou classe..."
+        },
+        "kpi": {
+            "averageGrade": "Note Moyenne",
+            "passRate": "Taux de Réussite",
+            "avgAbsences": "Absences Moyennes",
+            "atRisk": "Élèves à Risque"
+        },
+        "charts": {
+            "gradeDistTitle": "Répartition des notes finales (exemple)",
+            "featureImportanceTitle": "Importance des Variables IA",
+            "top20": "Top 20 vérifiés",
+            "finalGradeLine": "Note Finale (G3)",
+            "riskDistTitle": "Répartition des risques",
+            "riskDistTotal": "Total Étudiants",
+            "passing": "Réussite",
+            "atRisk": "À Risque",
+            "classComparisonTitle": "Performance par Classe",
+            "temporalTitle": "Évolution des Performances (Tendances)"
+        },
+        "table": {
+            "title": "Dossiers Étudiants Détaillés",
+            "results": "{{count}} Résultats",
+            "cols": {
+                "massar": "Code Massar",
+                "class": "Classe",
+                "gender": "Sexe",
+                "absences": "Absences",
+                "participation": "Participation",
+                "g3": "Note Finale (G3)",
+                "status": "Statut"
+            },
+            "status": {
+                "average": "Moyen",
+                "atRisk": "À Risque",
+                "excellent": "Excellent"
+            },
+            "loading": "Chargement des données...",
+            "empty": "Aucun étudiant trouvé correspondant à votre recherche.",
+            "export": "Exporter CSV",
+            "pagination": {
+                "prev": "Précédent",
+                "next": "Suivant",
+                "page": "Page {{current}} sur {{total}}"
+            }
+        }
+    },
+    "predictions": {
+        "header": {
+            "title": "Prédictions de l'IA",
+            "subtitle": "Notre modèle de Machine Learning analyse l'historique académique, l'assiduité et la démographie pour prédire quels étudiants risquent d'échouer (G3 < 10), permettant une intervention précouce."
+        },
+        "actions": {
+            "refresh": "Actualiser les données",
+            "train": "Entraîner l'IA & Prédire",
+            "training": "Entraînement du Modèle..."
+        },
+        "banner": {
+            "success": "Modèle Mettre à Jour avec Succès",
+            "details": "Précision Classif. : {{rf}}% • Score AUC : {{auc}}% • {{records}} étudiants analysés sur {{features}} variables."
+        },
+        "table": {
+            "title": "Dernières Prédictions",
+            "cols": {
+                "date": "Date",
+                "massar": "Code Massar",
+                "gender": "Sexe",
+                "predicted": "Probabilité de Réussite",
+                "riskLevel": "Niveau de Risque",
+                "topFactor": "Facteur Principal",
+                "recommendation": "Recommandation"
+            },
+            "loading": "Chargement de l'analyse IA...",
+            "empty": "Aucune prédiction générée. Cliquez sur 'Entraîner l'IA' pour commencer."
+        }
+    },
+    "eda": {
+        "header": {
+            "title": "Analyse Exploratoire des Données (EDA)",
+            "subtitle": "Une carte thermique des corrélations montrant les relations statistiques entre les différentes variables et le résultat prédictif final (G3)."
+        },
+        "actions": {
+            "regenerate": "Régénérer le Graphique"
+        },
+        "chart": {
+            "loading": "Génération de la Carte Thermique...",
+            "error": "Échec du chargement depuis le backend."
+        }
+    },
+    "modal": {
+        "title": "Détails de l'Étudiant",
+        "loading": "Chargement du dossier de l'élève...",
+        "error": "Impossible de récupérer les données de l'étudiant.",
+        "profile": {
+            "id": "ID : {{id}}",
+            "class": "Classe : {{class}}",
+            "level": "Niveau : {{level}}"
+        },
+        "social": {
+            "title": "Contexte Social",
+            "guardian": "Tuteur",
+            "guardianUnknown": "Inconnu",
+            "schoolingYears": "Années de Scolarité",
+            "years": "{{count}} ans",
+            "guardianJob": "Profession Tuteur",
+            "jobUnknown": "N/D"
+        },
+        "academic": {
+            "title": "Performance Académique",
+            "finalAvg": "Moy. Finale",
+            "absences": "Absences",
+            "participation": "Note de Participation",
+            "downloadReport": "Télécharger Rapport PDF"
+        }
+    },
+    "upload": {
+        "button": "Importer des données",
+        "title": "Importer un fichier de données",
+        "subtitle": "Charger un fichier Excel (.xlsx) ou CSV contenant les données étudiantes au format Massar.",
+        "dropzone": "Glissez-déposez votre fichier ici, ou cliquez pour parcourir",
+        "formats": "Formats acceptés : .xlsx, .xls, .csv",
+        "uploading": "Importation en cours...",
+        "success": "{{count}} étudiants importés avec succès !",
+        "error": "Erreur lors de l'importation",
+        "cancel": "Annuler",
+        "submit": "Lancer l'importation",
+        "close": "Fermer"
+    },
+    "login": {
+        "title": "Analyses Étudiantes",
+        "subtitle": "Accès Sécurisé",
+        "username": "Identifiant",
+        "password": "Mot de passe",
+        "button": "Se connecter",
+        "error_invalid": "Identifiants incorrects (admin/admin)",
+        "security_tip": "Ce système est réservé au personnel administratif autorisé."
+    },
+    "about": {
+        "hero": {
+            "subtitle": "Projet de Fin d'Études",
+            "description": "Une plateforme analytique intelligente conçue pour aider les éducateurs à identifier les élèves à risque grâce au Machine Learning."
+        },
+        "mission": {
+            "title": "Notre Mission",
+            "p1": "Ce projet vise à transformer la gestion des données scolaires Massar en outils décisionnels performants.",
+            "p2": "En utilisant des algorithmes de Random Forest, nous prédisons les performances finales pour permettre une intervention préventive."
+        },
+        "tech": {
+            "title": "Stack Technologique",
+            "repo": "Voir sur GitHub"
+        },
+        "features": {
+            "realtime": "Temps Réel",
+            "realtimeDesc": "Données synchronisées instantanément avec PostgreSQL.",
+            "ai": "IA Prédictive",
+            "aiDesc": "Modèles Random Forest entraînés sur le dataset Massar.",
+            "i18n": "Multilingue",
+            "i18nDesc": "Support complet du Français et de l'Anglais.",
+            "responsive": "Ultra-Responsive",
+            "responsiveDesc": "Design optimisé pour tablettes et ordinateurs."
+        }
+    },
+    "pipeline": {
+        "title": "Pipeline d'Intégration",
+        "subtitle": "Importation, Nettoyage et Prédiction IA",
+        "tabs": {
+            "upload": "Nouvel Import",
+            "history": "Historique"
+        },
+        "dropzone": {
+            "title": "Glissez votre fichier Massar ici",
+            "subtitle": "Formats acceptés : CSV, XLSX, XLS"
+        },
+        "status": {
+            "uploaded": "Fichier Importé",
+            "processing": "Traitement en cours...",
+            "processing_desc": "Nous nettoyons les données, ré-entraînerons les modèles et générerons les prédictions.",
+            "trained": "Modèles Entraînés",
+            "predicted": "Prédictions Générées",
+            "success": "Traitement Terminé avec Succès",
+            "success_desc": "Vos modèles sont à jour et les prédictions ont été actualisées pour tous les élèves."
+        },
+        "actions": {
+            "run": "Lancer le Pipeline IA",
+            "ingest": "Lancer l'Ingestion",
+            "close": "Fermer et Voir les Résultats"
+        },
+        "history": {
+            "empty": "Aucun import historique trouvé.",
+            "delete_confirm": "Voulez-vous vraiment supprimer cet import et toutes les données associées ?"
+        }
+    }
+}

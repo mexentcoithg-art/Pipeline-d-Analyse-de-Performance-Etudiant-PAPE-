@@ -1,0 +1,28 @@
+# Node / React
+node_modules/
+dist/
+client/dist/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python / Flask
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+server/venv/
+env/
+.env
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs / DB
+*.log
+*.sqlite3
